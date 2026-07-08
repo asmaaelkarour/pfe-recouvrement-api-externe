@@ -24,7 +24,7 @@ jobs:
           pip install flask pytest flake8
 
       - name: Lint API code
-        run: # flake8 check disabled temporarily
+        run: flake8 api_externe.py --max-line-length=120
 
       - name: Test API (placeholder)
         run: |
